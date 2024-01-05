@@ -30,20 +30,20 @@ const TypingText = () => {
   };
 
 const Header = () => (
-    <div className="gpt3__header section__padding" id="home">
-      <div className="gpt3__header-content">
+    <div className="gilbert__header section__padding" id="home">
+      <div className="gilbert__header-content">
         <h1 className="gradient__text">Hello!</h1>
           <h1 className="gradient__text">
               <TypingText />
           </h1>
         <p className='subtext'>Welcome to my website, a collection of my projects, adventures, and thoughts as I navigate the journey that is life</p>
-        <div className="gpt3__header-content__input">
+        <div className="gilbert__header-content__input">
           <input type="email" placeholder="Your Email Address" />
           <button type="button">Let's connect</button>
         </div>
       </div>
   
-      <div className="gpt3__header-image">
+      <div className="gilbert__header-image">
         <img src={ai} />
       </div>
     </div>
