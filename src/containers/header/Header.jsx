@@ -12,7 +12,7 @@ const TypingText = () => {
   
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['I am Gilbert.', 'I am a student.', 'I am an aspiring programmer.'], 
+        strings: ['I am Gilbert.', 'I am a student.', 'I am a programmer.', "I am a writer."], 
         typeSpeed: 50, 
         loop: true,
       });
@@ -33,19 +33,13 @@ const Header = () => (
     <div className="gpt3__header section__padding" id="home">
       <div className="gpt3__header-content">
         <h1 className="gradient__text">Hello!</h1>
-        <h1 className="gradient__text">
-            <TypingText />
-        </h1>
-        <p>Welcome to my website, a collection of my projects, adventures, and thoughts as I navigate the journey that is life</p>
-  
+          <h1 className="gradient__text">
+              <TypingText />
+          </h1>
+        <p className='subtext'>Welcome to my website, a collection of my projects, adventures, and thoughts as I navigate the journey that is life</p>
         <div className="gpt3__header-content__input">
           <input type="email" placeholder="Your Email Address" />
-          <button type="button">Contact me</button>
-        </div>
-  
-        <div className="gpt3__header-content__people">
-          <img src={people} />
-          <p>1,600 people requested access a visit in last 24 hours</p>
+          <button type="button">Let's connect</button>
         </div>
       </div>
   
