@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
 import './navbar.css'; 
-import Typed from 'typed.js';
+import { Link } from 'react-router-dom';
 
 const Menu = () => (
     <>
-    <p><a href="#home">Home</a></p>
-    <p><a href="#portfolio">Portfolio</a></p>
-    <p><a href="#projects">Projects</a></p>
-    <p><a href="#blog">Blog</a></p>
-    <p><a href="#contact">Contact</a></p>
+    <p><Link to="/">Home</Link></p>
+    <p><Link to="/portfolio">Portfolio</Link></p>
+    <p><Link to="/projects">Projects</Link></p>
+    <p><Link to="/blog">Blog</Link></p>
+    <p><Link to="/contact">Contact</Link></p>
     </>
 );
 
@@ -20,9 +19,6 @@ const Navbar = () => {
 
     return (
         <div className="gilbert__navbar">
-            <div className="gilbert__navbar-links_logo">
-                <p></p>
-            </div>
             <div className="gilbert__navbar-links">
                 <div className="gilbert__navbar-links_container">
                     <Menu />
