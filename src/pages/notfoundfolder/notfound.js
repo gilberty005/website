@@ -7,7 +7,7 @@ export function Notfound() {
         <div className = "notfound__main">
             <h1 className="gradient__text">How did you get here? You shouldn't be here.</h1>
                 <Link to="/">
-                    <button>Go home</button>
+                    <button>Go Home</button>
                 </Link>
         </div>
     )
