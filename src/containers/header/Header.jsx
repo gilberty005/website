@@ -30,7 +30,7 @@ const TypingText = () => {
   };
 
 const Header = () => (
-    <div className="gilbert__header section__padding" id="home">
+    <div className="gilbert__header section__padding">
       <div className="gilbert__header-content">
         <h1 className="gradient__text">Hello!</h1>
           <h1 className="gradient__text">

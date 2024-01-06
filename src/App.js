@@ -6,10 +6,13 @@ import {Portfolio} from './pages/portfoliofolder/portfolio';
 import {Projects} from './pages/projectsfolder/projects';
 import {Home} from './pages/homefolder/home';
 import {Notfound} from './pages/notfoundfolder/notfound'; 
+import { Footer} from './containers'; 
+import { Navbar } from './components'; 
 
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
@@ -18,6 +21,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<Notfound/>}/>
       </Routes>
+      <Footer />
     </Router>
   );
 }

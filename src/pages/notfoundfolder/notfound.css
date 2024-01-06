@@ -1,0 +1,33 @@
+.notfound__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  .gradient__text {
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--font-family);
+  }
+
+  .notfound__main button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #800080;
+    border: 2px solid #800080;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px; /* Curved edges */
+    margin-top: 20px; 
+    margin-bottom: 20px;
+   
+}
