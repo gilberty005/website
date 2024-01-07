@@ -250,10 +250,16 @@ export function Notfound() {
                     keys.a.pressed = true; 
                     break; 
                 case 'w':
-                    player.velocity.y = -4; 
+                    if (player.JumpCounter===false) {
+                        player.velocity.y = -4; 
+                        player.changeJumpCounter(true);
+                    }
                     break;
                 case 'ArrowUp':
-                    player.velocity.y = -4; 
+                    if (player.JumpCounter===false) {
+                        player.velocity.y = -4; 
+                        player.changeJumpCounter(true);
+                    } 
                     break;
                 case 'ArrowLeft':
                     keys.a.pressed = true;

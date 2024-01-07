@@ -12,6 +12,7 @@ export class Player extends Sprite{
             y:1
         }
         this.CollisionBlocks = CollisionBlocks; 
+        this.JumpCounter = false; 
         this.platformCollisionBlocks = platformCollisionBlocks; 
         this.hitbox = {
             position: {
@@ -39,6 +40,11 @@ export class Player extends Sprite{
             width: 200, 
             height: 80,
         }
+    }
+
+    changeJumpCounter(trueorfalse){
+        if (this.JumpCounter === trueorfalse) return 
+        this.JumpCounter = trueorfalse; 
     }
 
     switchSprite(key){
@@ -190,6 +196,7 @@ export class Player extends Sprite{
                     const offset = this.hitbox.position.y - this.position.y + this.hitbox.height;
 
                     this.position.y=CollisionBlock.position.y - offset - 0.01;
+                    this.changeJumpCounter(false);
                     break;
                 }
                 if (this.velocity.y<0){
@@ -219,6 +226,7 @@ export class Player extends Sprite{
                     const offset = this.hitbox.position.y - this.position.y + this.hitbox.height;
 
                     this.position.y=platformCollisionBlock.position.y - offset - 0.01;
+                    this.changeJumpCounter(false);
                     break;
                 }
             }
