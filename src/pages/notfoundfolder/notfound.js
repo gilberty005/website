@@ -252,6 +252,15 @@ export function Notfound() {
                 case 'w':
                     player.velocity.y = -4; 
                     break;
+                case 'ArrowUp':
+                    player.velocity.y = -4; 
+                    break;
+                case 'ArrowLeft':
+                    keys.a.pressed = true;
+                    break;
+                case 'ArrowRight':
+                    keys.d.pressed = true;
+                    break;
             }
         })
 
@@ -263,6 +272,12 @@ export function Notfound() {
                 case 'a':
                     keys.a.pressed = false; 
                     break; 
+                case 'ArrowLeft':
+                    keys.a.pressed = false;
+                    break;
+                case 'ArrowRight':
+                    keys.d.pressed = false;
+                    break;
             }
         })
 
