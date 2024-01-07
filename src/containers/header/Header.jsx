@@ -12,7 +12,7 @@ const TypingText = () => {
   
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['I am Gilbert.', 'I am a student.', 'I am a programmer.', "I am a writer."], 
+        strings: ['I am Gilbert.', 'I am a student.', 'I love programming.', "I love writing."], 
         typeSpeed: 50, 
         loop: true,
       });
