@@ -23,6 +23,7 @@ import {
   import columbia from "../assets/columbia.png"
   import ssp from "../assets/ssp.png"
   import churchill from "../assets/churchill.png"
+  import comingsoon from "../assets/comingsoon.png"
   
   const services = [
     {
@@ -179,5 +180,29 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+
+  const blogs = [
+    {
+      name: "Coming Soon!",
+      description:
+        "Blogs will be coming soon! In the meantime, here is what ChatGPT has to has say about the matter: Get ready to laugh your socks off, because my 'Coming Soon' section is like a mystery box of hilarity waiting to be unleashed! I've locked myself in a room with nothing but coffee and dad jokes, and I'm cooking up a storm of comedy that'll have you rolling on the floor laughing.",
+      tags: [
+        {
+          name: "helpme",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "seriously",
+          color: "green-text-gradient",
+        },
+        {
+          name: "chatgtplockedmeup",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: comingsoon,
+      source_code_link: "https://github.com/",
+    },
+  ];
   
-  export { services, technologies, experiences, projects };
+  export { services, technologies, experiences, projects, blogs };
