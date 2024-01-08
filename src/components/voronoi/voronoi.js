@@ -101,9 +101,9 @@ export default function Voronoi() {
       const context = canvasRef.current.getContext('2d');
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
 
-      const gradient = context.createLinearGradient(0, 0, canvasRef.current.width, 0);
-      gradient.addColorStop(0, '#488B8A');   // Start color (light blue)
-      gradient.addColorStop(1, '#9B75D9');   // End color (light purple)
+      const gradient = context.createLinearGradient(0, 0, canvasRef.current.width, 0); 
+      gradient.addColorStop(0, '#488B8A');   
+      gradient.addColorStop(1, '#9B75D9'); 
       context.fillStyle = gradient;
 
       // TODO: adjust the speed of the points forming 

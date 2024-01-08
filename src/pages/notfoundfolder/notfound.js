@@ -189,7 +189,9 @@ export function Notfound() {
             c.scale(4,4);
             c.translate(camera.position.x,camera.position.y);
             background.update();
-            {/*}
+
+
+            {/*
             CollisionBlocks.forEach(CollisionBlock => {
                 CollisionBlock.update();
             })
@@ -197,6 +199,7 @@ export function Notfound() {
                 block.update();
             })
             */}
+            
 
             player.checkForHorizontalCanvasCollisions();
             player.update();
