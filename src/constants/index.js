@@ -15,30 +15,14 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
   } from "../assets";
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
+
+  import platformer from "../assets/platformer.png"
+  import website from "../assets/Website.png"
+  import columbia from "../assets/columbia.png"
+  import ssp from "../assets/ssp.png"
+  import churchill from "../assets/churchill.png"
   
   const services = [
     {
@@ -118,7 +102,7 @@ import {
     {
       title: "Student",
       company_name: "Columbia University",
-      icon: null,
+      icon: columbia,
       iconBg: "#383E56",
       date: "Sept 2023 - Present",
       points: [
@@ -130,7 +114,7 @@ import {
     {
       title: "Student Researcher",
       company_name: "Summer Science Program",
-      icon: null,
+      icon: ssp,
       iconBg: "#E6DEDD",
       date: "June 2022 - July 2022",
       points: [
@@ -141,7 +125,7 @@ import {
     {
       title: "Student",
       company_name: "Sir Winston Churchill High School",
-      icon: null,
+      icon: churchill,
       iconBg: "#E6DEDD",
       date: "Sept 2020 - June 2023",
       points: [
@@ -151,87 +135,39 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
-      name: "Car Rent",
+      name: "Platformer Game",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Have you tried to get to the 404 Not Found page yet? There you will be surprised by a simple platformer game. Currently there is no objective in the game, but there will be soon :)",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "gamedev",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: platformer,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Personal Website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This website! My biggest project to date, there is a lot of little easter eggs to go out searching for! I am still constantly adding to my project and any feedback would be greatly appreciated",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -239,9 +175,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: website,
       source_code_link: "https://github.com/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
