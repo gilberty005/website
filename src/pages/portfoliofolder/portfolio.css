@@ -1,0 +1,15 @@
+.hero {
+    background-image: url('/src/assets/herobg.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Set text color as needed */
+  }
+
+.bigheader{
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold;
+}
