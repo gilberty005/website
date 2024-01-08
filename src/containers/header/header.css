@@ -77,10 +77,9 @@
 }
 
 .gilbert__header-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:block;
+    justify-content: right;
+    align-items: right;
 }
 
 .gilbert__header-image img {

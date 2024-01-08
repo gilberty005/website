@@ -4,6 +4,7 @@ import Typed from 'typed.js';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
 import { useEffect, useRef } from "react";
+import Voronoi from '../../components/voronoi/voronoi'
 
 const TypingText = () => {
     const el = useRef(() => {
@@ -42,9 +43,10 @@ const Header = () => (
           <button type="button">Let's connect</button>
         </div>
       </div>
-  
+
       <div className="gilbert__header-image">
-        <img src={ai} />
+        {/*<img src={ai} />*/}
+        <Voronoi />
       </div>
     </div>
   );

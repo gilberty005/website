@@ -1,6 +1,5 @@
 import './home.css'; 
-import { Footer, Blog, Header } from '../../containers'; 
-import { Navbar } from '../../components'; 
+import { Blog, Header } from '../../containers'; 
 
 
 export function Home() {
