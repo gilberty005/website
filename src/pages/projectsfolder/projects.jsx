@@ -63,7 +63,6 @@ export function Projects() {
     setSelectedTag(tag);
   };
 
-  
   return (
     <>
       <motion.div variants={textVariant()}>
