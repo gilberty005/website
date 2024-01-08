@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 import { github } from "../../assets";
 import { projects } from "../../constants";
@@ -57,8 +57,15 @@ const ProjectCard = ({
   };
 
 export function Projects() {
-    return (
-        <>
+  const [selectedTag, setSelectedTag] = useState("");
+
+  const handleTagClick = (tag) => {
+    setSelectedTag(tag);
+  };
+
+  
+  return (
+    <>
       <motion.div variants={textVariant()}>
         <h1 className={"gradient__text"}>My Projects</h1>
       </motion.div>
@@ -69,5 +76,5 @@ export function Projects() {
         ))}
       </div>
     </>
-    )
+  )
 }

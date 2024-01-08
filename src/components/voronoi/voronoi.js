@@ -10,7 +10,7 @@ export default function Voronoi() {
     const width = 500; 
     const height = 600; 
     const n = Math.round(width * height / 40); 
-
+    let i = 0;
     const context = canvasRef.current.getContext('2d');
     const workerScript = URL.createObjectURL(new Blob([`
       importScripts("https://cdn.observableusercontent.com/npm/d3-delaunay@6.0.4/dist/d3-delaunay.min.js");
@@ -99,13 +99,16 @@ export default function Voronoi() {
   useEffect(() => {
     if (imageLoaded && imageLoaded && points.length > 0) {
       const context = canvasRef.current.getContext('2d');
+      if(imageLoaded == true){
+        canvasRef.current.style.display = 'block'; 
+      }
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
 
       const gradient = context.createLinearGradient(0, 0, canvasRef.current.width, 0); 
       gradient.addColorStop(0, '#488B8A');   
       gradient.addColorStop(1, '#9B75D9'); 
       context.fillStyle = gradient;
-
+      canvasRef.current.style.display = 'content';
       // TODO: adjust the speed of the points forming 
       for (let i = 0; i < points.length; i += 2) {
         const x = points[i];
@@ -118,5 +121,5 @@ export default function Voronoi() {
     }
   }, [imageLoaded,imageLoaded, points]);
 
-  return <canvas ref={canvasRef} width="500" height="600" />;
+  return <canvas ref={canvasRef} width="500" height="600" style={{ display: 'none' }}/>;
 }

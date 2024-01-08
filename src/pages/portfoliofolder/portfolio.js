@@ -4,7 +4,6 @@ import {
     VerticalTimelineElement,
   } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import { ComputersCanvas } from '../../components/canvas';
 import { experiences } from "../../constants";
 import "react-vertical-timeline-component/style.min.css";
 import './portfolio.css';
