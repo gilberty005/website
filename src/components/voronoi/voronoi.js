@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import obama from '../../assets/obama.png';
+import obama from '../../assets/gilbert.png';
 
 export default function Voronoi() {
   const canvasRef = useRef(null);
@@ -100,7 +100,12 @@ export default function Voronoi() {
     if (imageLoaded && points.length > 0) {
       const context = canvasRef.current.getContext('2d');
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
-      context.fillStyle = '#fff';
+
+      const gradient = context.createLinearGradient(0, 0, canvasRef.current.width, 0);
+      gradient.addColorStop(0, '#488B8A');   // Start color (light blue)
+      gradient.addColorStop(1, '#9B75D9');   // End color (light purple)
+      context.fillStyle = gradient;
+
       // TODO: adjust the speed of the points forming 
       for (let i = 0; i < points.length; i += 2) {
         const x = points[i];

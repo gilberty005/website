@@ -45,7 +45,6 @@ const Header = () => (
       </div>
 
       <div className="gilbert__header-image">
-        {/*<img src={ai} />*/}
         <Voronoi />
       </div>
     </div>
