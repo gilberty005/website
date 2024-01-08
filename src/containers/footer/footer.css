@@ -18,6 +18,12 @@
     text-align: left;
 }
 
+.gilbert__footer-links_social {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+  }
+
 .gilbert__footer-links div {
     width: 250px;
     margin: 1rem;

@@ -97,7 +97,7 @@ export default function Voronoi() {
   }, []);
 
   useEffect(() => {
-    if (imageLoaded && points.length > 0) {
+    if (imageLoaded && imageLoaded && points.length > 0) {
       const context = canvasRef.current.getContext('2d');
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
 
@@ -116,7 +116,7 @@ export default function Voronoi() {
         context.fill();
       }
     }
-  }, [imageLoaded, points]);
+  }, [imageLoaded,imageLoaded, points]);
 
   return <canvas ref={canvasRef} width="500" height="600" />;
 }
