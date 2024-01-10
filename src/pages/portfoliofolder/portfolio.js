@@ -6,7 +6,6 @@ import {
 import { motion } from "framer-motion";
 import { experiences } from "../../constants";
 import "react-vertical-timeline-component/style.min.css";
-import './portfolio.css';
 import { textVariant } from "../../utils/motion";
  
 const ExperienceCard = ({ experience }) => {

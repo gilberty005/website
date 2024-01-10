@@ -38,7 +38,6 @@ const Header = () => (
           </h1>
         <p className='subtext'>Welcome to my website, a collection of my projects, adventures, and thoughts as I navigate the journey that is life</p>
         <div className="gilbert__header-content__input">
-          <input type="email" placeholder="Your Email Address" />
           <Link to="/contact"><button type="button">Let's connect</button></Link>
         </div>
       </div>

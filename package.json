@@ -10,9 +10,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cloudflare": "^2.9.1",
+    "express": "^4.18.2",
     "framer-motion": "^10.17.9",
     "js-yaml": "^4.1.0",
     "maath": "^0.10.7",
+    "nodemailer": "^6.9.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
@@ -28,7 +30,8 @@
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^3.0.2",
     "tailwindcss": "^3.4.1"
   }
 }

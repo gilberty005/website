@@ -1,0 +1,45 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+.form-container { 
+    position: relative; 
+    left: 25%;
+    width: 60%;
+    height: 100vh;
+
+}
+
+.contact-form {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 600px;
+}
+
+input, 
+textarea { 
+    background-color: #1d1836; 
+    width: 100%; 
+    margin-top: 2rem;
+    border: none; 
+    border-bottom: 1px #1d1836; 
+}
+
+.submit { 
+    border: 1px #1d1836; 
+    padding: 1rem; 
+    text-align: center; 
+    background-color:#1d1836;
+    cursor: pointer; 
+}
+
+.submit:hover{
+    opacity: 0.6;
+}
+
+
+  
