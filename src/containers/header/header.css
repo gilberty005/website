@@ -59,14 +59,14 @@
 
 .gilbert__header-content__input button {
     flex: 0.6;
-    width: 100%;
+    width: auto;
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
+    background: #742087;
+    border: 2px solid #742087;
     padding: 0 1rem;
     color: #fff;
     cursor: pointer;

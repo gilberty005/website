@@ -1,10 +1,9 @@
 import React from 'react';
 import './header.css'; 
 import Typed from 'typed.js';
-import people from '../../assets/people.png';
-import ai from '../../assets/ai.png';
 import { useEffect, useRef } from "react";
 import Voronoi from '../../components/voronoi/voronoi'
+import { Link } from 'react-router-dom';
 
 const TypingText = () => {
     const el = useRef(() => {
@@ -40,7 +39,7 @@ const Header = () => (
         <p className='subtext'>Welcome to my website, a collection of my projects, adventures, and thoughts as I navigate the journey that is life</p>
         <div className="gilbert__header-content__input">
           <input type="email" placeholder="Your Email Address" />
-          <button type="button">Let's connect</button>
+          <Link to="/contact"><button type="button">Let's connect</button></Link>
         </div>
       </div>
 
