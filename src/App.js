@@ -24,12 +24,6 @@ const App = ({ signOut }) => {
         <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
-      <View className="App">
-        <Card>
-          <Heading level={1}>We now have Auth!</Heading>
-        </Card>
-        <Button onClick={signOut}>Sign Out</Button>
-      </View>
     </Router>
   );
 }

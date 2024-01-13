@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css'; 
 import { Link } from 'react-router-dom';
+import "@aws-amplify/ui-react/styles.css";
+import { withAuthenticator, Button, Heading, View, Card } from "@aws-amplify/ui-react";
+
 
 const Menu = () => (
     <>
@@ -13,7 +16,7 @@ const Menu = () => (
     </>
 );
 
-const Navbar = () => {
+const Navbar = ({ signOut }) => {
     const el = React.useRef(null);
     const [toggleMenu, setToggleMenu] = useState(false); 
 
@@ -23,6 +26,9 @@ const Navbar = () => {
                 <div className="gilbert__navbar-links_container">
                     <Menu />
                 </div>
+                <View className="App">
+                    <Button onClick={signOut}>Sign Out</Button>
+                </View>
             </div>
             <div className="gilbert__navbar_menu">
             {toggleMenu
@@ -40,4 +46,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar; 
+export default withAuthenticator(Navbar); 
