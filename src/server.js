@@ -7,7 +7,7 @@ const app = express();
 // Middleware to parse JSON in the request body
 app.use(bodyParser.json());
 
-// Replace with your email configuration
+// Email configuration
 const transporter = nodemailer.createTransport({
   service: 'gmail', 
   auth: {
@@ -22,7 +22,7 @@ app.post('/', (req, res) => {
 
   const mailOptions = {
     from: formData.email,
-    to: 'gilberty005@gmail.com', // Replace with the recipient's email
+    to: 'gilberty005@gmail.com',
     subject: formData.subject,
     text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
   };

@@ -1,5 +1,5 @@
 import './home.css'; 
-import { Blog, Header } from '../../containers'; 
+import { Header } from '../../containers'; 
 
 
 export function Home() {
@@ -8,7 +8,6 @@ export function Home() {
         <div className = "gradient_bg">
           <Header /> 
         </div>
-        {/*<Blog /> */}
       </div>
     )
   }

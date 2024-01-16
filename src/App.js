@@ -8,10 +8,8 @@ import { Home } from './pages/homefolder/home';
 import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
 import { Navbar } from './components';
-import "@aws-amplify/ui-react/styles.css";
-import { withAuthenticator, Button, Heading, View, Card } from "@aws-amplify/ui-react";
 
-const App = ({ signOut }) => {
+const App = ( ) => {
   return (
     <Router>
       <Navbar />
@@ -28,4 +26,4 @@ const App = ({ signOut }) => {
   );
 }
 
-export default withAuthenticator(App);
+export default App;

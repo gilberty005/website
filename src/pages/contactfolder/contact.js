@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./contact.css";
-import { Flex } from '@aws-amplify/ui-react';
 
 
 export function Contact() {
