@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion";
-import { github } from "../../assets";
+import { github } from "../../assets/github.png";
 import { blogs } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
 

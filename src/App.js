@@ -7,7 +7,7 @@ import { Projects } from './pages/projectsfolder/projects';
 import { Home } from './pages/homefolder/home';
 import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
-import { Navbar } from './components';
+import Navbar from './components/navbar/Navbar';
 
 const App = ( ) => {
   return (
