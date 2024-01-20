@@ -1,8 +1,0 @@
-{
-"SpaProxyServer": {
-"ServerUrl": "https://localhost:44406",
-"LaunchCommand": "npm start",
-"WorkingDirectory": "/Users/sophie/Desktop/personalwebsite/personalwebsite/ClientApp/",
-"MaxTimeoutInSeconds": "120"
-}
-}
