@@ -17,8 +17,9 @@ export function Contact() {
 
 
    // Create an XMLHttpRequest
+   const serverUrl = process.env.SERVER_URL || 'https://localhost:3001';
    const xhr = new XMLHttpRequest();
-   xhr.open('POST', 'http://localhost:3000');
+   xhr.open('POST', serverUrl);
    xhr.setRequestHeader("content-type", "application/json");
    xhr.onload = function () {
      console.log(xhr.responseText);
