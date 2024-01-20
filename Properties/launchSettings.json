@@ -11,7 +11,7 @@
     "personalwebsite": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7049;http://localhost:5259",
+      "applicationUrl": "https://localhost:7050;http://localhost:5259",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"

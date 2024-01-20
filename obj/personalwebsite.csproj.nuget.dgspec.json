@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gilbertyang/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj": {}
+    "/Users/sophie/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj": {}
   },
   "projects": {
-    "/Users/gilbertyang/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj": {
+    "/Users/sophie/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gilbertyang/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj",
+        "projectUniqueName": "/Users/sophie/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj",
         "projectName": "personalwebsite",
-        "projectPath": "/Users/gilbertyang/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj",
-        "packagesPath": "/Users/gilbertyang/.nuget/packages/",
-        "outputPath": "/Users/gilbertyang/Desktop/personalwebsite/personalwebsite/obj/",
+        "projectPath": "/Users/sophie/Desktop/personalwebsite/personalwebsite/personalwebsite.csproj",
+        "packagesPath": "/Users/sophie/.nuget/packages/",
+        "outputPath": "/Users/sophie/Desktop/personalwebsite/personalwebsite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/gilbertyang/.nuget/NuGet/NuGet.Config"
+          "/Users/sophie/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
