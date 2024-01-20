@@ -3,6 +3,14 @@
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyAllowSpecificOrigins",
+                      builder =>
+                      {
+                        builder.WithOrigins("https://localhost:44406").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                      });
+});
 
 var app = builder.Build();
 
@@ -16,7 +24,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors("MyAllowSpecificOrigins");
 
 app.MapControllerRoute(
     name: "default",

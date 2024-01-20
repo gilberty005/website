@@ -17,13 +17,13 @@ export function Contact() {
 
 
    // Create an XMLHttpRequest
-   const serverUrl = process.env.SERVER_URL || 'https://localhost:3001';
+   const serverUrl = process.env.SERVER_URL || 'https://localhost:7050/contact/SendEmail';
    const xhr = new XMLHttpRequest();
    xhr.open('POST', serverUrl);
    xhr.setRequestHeader("content-type", "application/json");
    xhr.onload = function () {
      console.log(xhr.responseText);
-     if (xhr.responseText === "success") {
+     if (xhr.status === 200) {
        alert("Your message has been delivered!");
        // Clear form inputs
        setFormData({
@@ -33,12 +33,17 @@ export function Contact() {
          message: "",
        });
      } else {
-       alert("Something went wrong");
+       alert("Your message was unsuccessful. Please try again later.");
      }
    };
+     //const data = {
+     //    name: formData.name,
+     //    email: formData.email,
+     //    subject: formData.subject,
+     //    message: formData.message
+     //};
    xhr.send(JSON.stringify(formData));
  };
-
 
  const handleChange = (e) => {
    const { name, value } = e.target;
