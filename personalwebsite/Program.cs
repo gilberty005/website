@@ -1,5 +1,7 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
 
+var myEnvironmentVariable = builder.Configuration["MyEnvironmentVariableName"];
+
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
@@ -13,6 +15,16 @@ builder.Services.AddCors(options =>
                       });
 });
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+//builder.WebHost.UseUrls($"http://*:{port}");
+builder.WebHost.UseUrls("http://*:5000");
+
+builder.Services.AddControllersWithViews();
+
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,7 +34,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseCors("MyAllowSpecificOrigins");
