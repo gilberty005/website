@@ -8,7 +8,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("MyAllowSpecificOrigins",
                       builder =>
                       {
-                        builder.WithOrigins("https://localhost:44406").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                        builder.AllowAnyOrigin()
+                          .AllowAnyHeader().AllowAnyMethod();
                       });
 });
 
