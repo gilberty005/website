@@ -1,10 +1,18 @@
 .notfound__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    flex-direction: column;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+  @media (max-width: 768px) {
+    .notfound__main {
+        height: auto; /* Change the height to 'auto' to allow content to push it down */
+        margin-top: 70px; /* Add margin-top to avoid overlapping with the header */
+    }
+}
 
   .gradient__text {
     text-align: center;
@@ -31,3 +39,4 @@
     margin-bottom: 20px;
    
 }
+

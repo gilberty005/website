@@ -298,7 +298,9 @@ export function Notfound() {
             <Link to="/">
                 <button>Go Home</button>
             </Link>
-            <canvas ref={canvasRef}></canvas>
+            <div className="canvas-container">
+                <canvas ref={canvasRef}></canvas>
+            </div>
         </div>
     )
 }

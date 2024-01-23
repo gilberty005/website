@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion";
-import github from "../../assets/github.png";
 import { projects } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
+import { FaLink } from "react-icons/fa6";
 
 const ProjectCard = ({
     index,
@@ -27,11 +27,7 @@ const ProjectCard = ({
                 onClick={() => window.open(source_code_link, "_blank")}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
-                <img
-                  src={github}
-                  alt='source code'
-                  className='w-1/2 h-1/2 object-contain'
-                />
+                <FaLink alt='source code'/>
               </div>
             </div>
           </div>

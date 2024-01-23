@@ -62,7 +62,7 @@
         },
       ],
       image: platformer,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://gilbertworld.com/#/enemiescomingsoon",
     },
     {
       name: "Personal Website",
@@ -83,7 +83,7 @@
         },
       ],
       image: website,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://gilbertworld.com",
     },
   ];
 
