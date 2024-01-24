@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
+import Voronoi from '../../components/voronoi/voronoi.js'
 
 
 export function Contact() {
@@ -99,6 +100,7 @@ export function Contact() {
          <input type="submit" className="submit" value="Send Message" />
        </form>
      </div>
+     <Voronoi />
    </>
  );
 }

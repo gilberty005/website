@@ -78,7 +78,7 @@
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: ".css",
           color: "pink-text-gradient",
         },
       ],
