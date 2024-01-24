@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./contact.css";
 import Voronoi from '../../components/voronoi/voronoi.js'
+import earth from '../../assets/earth.png'
 
 
 export function Contact() {
@@ -11,6 +12,7 @@ export function Contact() {
    message: "",
  });
 
+ const [charCount, setCharCount] = useState(0);
 
  const handleSubmit = async(e) => {
    e.preventDefault();
@@ -48,6 +50,15 @@ export function Contact() {
 
  const handleChange = (e) => {
    const { name, value } = e.target;
+   if (name === 'message') {
+    if (value.length > 3000) {
+      // Optionally, you can provide feedback to the user here
+      alert('Message cannot exceed 3000 characters.');
+      return;
+    }
+    setCharCount(value.length);
+  }
+
    setFormData((prevData) => ({
      ...prevData,
      [name]: value,
@@ -57,50 +68,55 @@ export function Contact() {
 
  return (
    <>
-     <h2 className="gradient__text">Contact</h2>
-     <div className="form-container">
-       <form onSubmit={handleSubmit} className="contact-form">
-         <input
-           type="text"
-           id="name"
-           name="name"
-           placeholder="Full name"
-           value={formData.name}
-           onChange={handleChange}
-         />
-         <br></br>
-         <input
-           type="email"
-           id="email"
-           name="email"
-           placeholder="Email"
-           value={formData.email}
-           onChange={handleChange}
-         />
-         <br></br>
-         <input
-           type="text"
-           id="subject"
-           name="subject"
-           placeholder="Subject"
-           value={formData.subject}
-           onChange={handleChange}
-         />
-         <br></br>
-         <textarea
-           id="message"
-           name="message"
-           cols="30"
-           rows="10"
-           placeholder="Message"
-           value={formData.message}
-           onChange={handleChange}
-         />
-         <br></br>
-         <input type="submit" className="submit" value="Send Message" />
-       </form>
+     <div className = "content-container">
+      {/*<Voronoi imageUrl={earth} />*/}
+      <div className="form-container">
+        <h2 className="gradient__text">Let's Connect!</h2>
+        <form onSubmit={handleSubmit} className="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <br></br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <br></br>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          <br></br>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          <div style={{ textAlign: 'right', color: 'grey' }}>
+            {charCount}/3000
+          </div>
+          <br></br>
+          <input type="submit" className="submit" value="Send Message" />
+        </form>
+      </div>
      </div>
-     <Voronoi />
    </>
  );
 }

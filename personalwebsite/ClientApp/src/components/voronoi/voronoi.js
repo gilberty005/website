@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import obama from '../../assets/gilbert.png';
 
-export default function Voronoi() {
+export default function Voronoi({ imageUrl }) {
   const canvasRef = useRef(null);
   const [points, setPoints] = useState([]);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -67,7 +66,7 @@ export default function Voronoi() {
 
     const img = new Image();
     // source image
-    img.src = obama;
+    img.src = imageUrl;
     img.crossOrigin = 'anonymous';
 
     img.onload = () => {

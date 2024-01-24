@@ -1,45 +1,76 @@
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: 'Raleway', sans-serif; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-.form-container { 
-    position: relative; 
-    left: 25%;
-    width: 60%;
-    height: 100vh;
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
 
+.form-container {
+    position: relative;
+    width: 45%;
+    background-color: #1d1836;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
-    top: 10%;
-    left: 10%;
+    display: flex; /* Center the text boxes horizontally and vertically */
+    flex-direction: column; /* Stack the text boxes vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    background-color: #1d1836;
     width: 80%;
-    height: 600px;
+    margin-top: 1rem; /* Adjust the margin-top value to decrease spacing */
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    outline: none;
 }
 
-input, 
-textarea { 
-    background-color: #1d1836; 
-    width: 100%; 
-    margin-top: 2rem;
-    border: none; 
-    border-bottom: 1px #1d1836; 
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #742087;
 }
 
-.submit { 
-    border: 1px #1d1836; 
-    padding: 1rem; 
-    text-align: center; 
-    background-color:#1d1836;
-    cursor: pointer; 
+.submit {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+    background-color: #1d1836;
+    cursor: pointer;
 }
 
-.submit:hover{
+.submit:hover {
     opacity: 0.6;
+    border: 1px solid #742087;
 }
 
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
 
-  
+    .form-container {
+        width: 90%;
+        left: 5%;
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
