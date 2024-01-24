@@ -59,6 +59,12 @@ textarea:focus {
     border: 1px solid #742087;
 }
 
+.focus-style:focus {
+    outline: none; 
+    border: 1px solid #742087; 
+    box-shadow: none; 
+  }
+
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;

@@ -113,7 +113,7 @@ export function Contact() {
             {charCount}/3000
           </div>
           <br></br>
-          <input type="submit" className="submit" value="Send Message" />
+          <input type="submit" className="submit focus-style" value="Send Message" />
         </form>
       </div>
      </div>
