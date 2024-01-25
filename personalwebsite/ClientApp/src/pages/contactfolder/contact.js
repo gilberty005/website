@@ -20,7 +20,7 @@ export function Contact() {
 
 
    // Create an XMLHttpRequest
-   const serverUrl = process.env.SERVER_URL || 'http://gilbertapp-env.eba-jmbcpmv2.us-east-2.elasticbeanstalk.com/contact/SendEmail';
+   const serverUrl = process.env.SERVER_URL || 'https://gilbertapp-env.eba-jmbcpmv2.us-east-2.elasticbeanstalk.com/contact/SendEmail';
    const xhr = new XMLHttpRequest();
    xhr.open('POST', serverUrl);
    xhr.setRequestHeader("content-type", "application/json");
