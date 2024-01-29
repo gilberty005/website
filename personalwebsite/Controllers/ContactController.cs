@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace personalwebsite.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ContactController : ControllerBase
 {
     private readonly ILogger<ContactController> _logger;
