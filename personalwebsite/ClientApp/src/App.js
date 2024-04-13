@@ -8,6 +8,7 @@ import { Home } from './pages/homefolder/home';
 import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
 import Navbar from './components/navbar/Navbar';
+const { REACT_APP_API_URL } = process.env;
 
 const App = ( ) => {
   return (
