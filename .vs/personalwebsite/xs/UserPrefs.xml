@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{8ACD52EF-CB70-4F42-8151-A300160E7209}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="personalwebsite/DataLayer/DBContext.cs">
+    <Files>
+      <File FileName="personalwebsite/ClientApp/src/server.js" Line="15" Column="31" />
+      <File FileName="personalwebsite/Controllers/WeatherForecastController.cs" Line="21" Column="6" />
+      <File FileName="personalwebsite/Controllers/ContactController.cs" Line="36" Column="10" />
+      <File FileName="personalwebsite/ClientApp/src/pages/contactfolder/contact.js" Line="46" Column="4" />
+      <File FileName="personalwebsite/Entities/Email.cs" Line="6" Column="22" />
+      <File FileName="personalwebsite/DataLayer/EmptyClass.cs" Line="12" Column="1" />
+      <File FileName="personalwebsite/Properties/launchSettings.json" Line="14" Column="26" />
+      <File FileName="personalwebsite/Program.cs" Line="29" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="personalwebsite">
+            <Node name="personalwebsite">
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="pages" expanded="True">
+                    <Node name="contactfolder" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataLayer" expanded="True">
+                <Node name="DBContext.cs" selected="True" />
+              </Node>
+              <Node name="Entities" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.personalwebsite PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
