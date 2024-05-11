@@ -6,13 +6,15 @@ import { Portfolio } from './pages/portfoliofolder/portfolio';
 import { Projects } from './pages/projectsfolder/projects';
 import { Home } from './pages/homefolder/home';
 import { Lithum } from './pages/lithum/lithum';
+import { Frosci } from './pages/frosci/frosci';
 import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
 import Navbar from './components/navbar/Navbar';
 
 const RouteWrapper = () => {
   const location = useLocation(); // Get the current location
-  const showHeaderFooter = location.pathname !== '/lithum'; // Determine if we should show header and footer
+  const showHeaderFooter = location.pathname !== '/lithum' && location.pathname !== '/frosci'; // Determine if we should show header and footer
+
 
   return (
     <>
@@ -24,6 +26,7 @@ const RouteWrapper = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/lithum" element={<Lithum />} />
+        <Route path="/frosci" element={<Frosci />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
       {showHeaderFooter && <Footer />}

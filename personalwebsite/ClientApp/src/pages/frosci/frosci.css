@@ -1,0 +1,181 @@
+.right-aligned-list li {
+    text-align: left;
+  }
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 10%;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline {
+    height: 300px;
+    width: 5px;
+    background-color: white;
+  }  
+  
+  .stub1 {
+    line-height: 300px;
+    font-size: 24px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Optional, adjust as needed for spacing */
+    height: 100px;
+  }
+  
+  .titleLeft, .titleRight {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Optional, for emphasis */
+  }
+  
+  .titleLeft {
+    text-align: left;
+    margin-left: 20%; /* Aligns the text to the left with a 20% margin */
+  }
+  
+  .titleRight {
+    text-align: right;
+    margin-right: 20%; /* Aligns the text to the right with a 20% margin */
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .circleWrapper {
+    position: relative;
+  }
+  
+  .message {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    font-weight: bold;
+  }
+  
+  .middle {
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+
+  .middle_2 {
+    padding-top: 10%;
+    padding-bottom: 30%;
+  }
+
+  /* New CSS for alternating messages */
+  .message-left {
+    left: 20%; /* Position to the left */
+    transform: translateX(0);
+  }
+  
+  .message-right {
+    left: 80%; /* Position to the right */
+    transform: translateX(-100%);
+  }
+  
+  .lithum_title {
+    font-size: 48px; /* Increased font size */
+    padding-top: 50px; /* Added padding from the top of the page */
+    margin: 0; /* Remove default margin to control spacing better */
+  }
+
+  .title_description {
+    color: #81AFDD
+  }
+
+  .end_description {
+    color: #81AFDD;
+    padding-top: 20px;  /* Adjust the value as needed for the top padding */
+    padding-bottom: 40px;  /* Adjust the value as needed for the bottom padding */
+}
+
+.input-areas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;  /* Control the width of the text areas relative to the parent container */
+    margin: 0 auto;  /* Centers the container horizontally */
+    padding: 10px;
+}
+
+.fact-input {
+    height: 100px;
+    width: 100%;  /* Ensures the textarea fits the width of .input-areas */
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Modify the style for the div that displays character count to center the text */
+.fact-input + div {
+    text-align: center;  /* Centers the character count text below the textarea */
+    color: grey;
+}
+
+  .typing-container {
+    width: 100%;  /* Ensure the container spans the full width of its parent */
+    padding: 5px;  /* Optional: adds padding around the text */
+  }
+  
+  /* Specific styles for the text to allow wrapping */
+  .typing-text {
+    line-height: 1.5;  /* Adjust line height for better readability */
+    word-wrap: break-word;  /* Ensures words break to prevent overflow */
+    max-width: 100%;  /* Restrict width to the parent container */
+  }
+  
+  .submit {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+    background-color: #1d1836;
+    cursor: pointer;
+    width: 20%
+}
+
+.submit:hover {
+    opacity: 0.6;
+    border: 1px solid #742087;
+}
+
+.frosci-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Optional: adds space above the image */
+}
+
+.frosci-image {
+    width: 50%; /* Adjust size as needed */
+    height: auto;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    width: 10%; /* Adjust size as needed */
+    height: auto;
+}
