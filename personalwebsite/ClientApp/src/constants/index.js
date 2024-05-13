@@ -1,5 +1,5 @@
   import platformer from "../assets/platformer.png"
-  import website from "../assets/Website.png"
+  import idk from "../assets/idk.png"
   import columbia from "../assets/columbia.png"
   import ssp from "../assets/ssp.png"
   import churchill from "../assets/churchill.png"
@@ -46,11 +46,11 @@
     {
       name: "Platformer Game",
       description:
-        "Have you tried to get to the 404 Not Found page yet? There you will be surprised by a simple platformer game. Currently there is no objective in the game, but there will be soon :)",
+        "Have you tried to get to the 404 Not Found page yet? There you will be surprised by a simple platformer game.",
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
+          color: "orange-text-gradient",
         },
         {
           name: "javascript",
@@ -64,6 +64,23 @@
       image: platformer,
       source_code_link: "https://gilbertworld.com/#/enemiescomingsoon",
     },
+    {
+      name: "The Google Effect",
+      description:
+        "A short interactive demonstration of the \"Google Effect\" made as my project for Frontiers of Science (SCNC CC1000)",
+      tags: [
+        {
+          name: "react",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "columbia",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: idk,
+      source_code_link: "https://gilbertworld.com/#/frosci",
+    }
   ];
 
   const blogs = [

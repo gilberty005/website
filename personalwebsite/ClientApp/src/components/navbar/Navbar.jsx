@@ -15,7 +15,6 @@ const Menu = () => (
 );
 
 const Navbar = ({ signOut }) => {
-    const el = React.useRef(null);
     const [toggleMenu, setToggleMenu] = useState(false); 
 
     return (

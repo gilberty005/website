@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./contact.css";
-import Voronoi from '../../components/voronoi/voronoi.js'
-import earth from '../../assets/earth.png'
 
 
 export function Contact() {
