@@ -4,6 +4,7 @@
   import ssp from "../assets/ssp.png"
   import churchill from "../assets/churchill.png"
   import comingsoon from "../assets/comingsoon.png"
+  import global from "../assets/global.png"
   
   const experiences = [
     {
@@ -13,9 +14,32 @@
       iconBg: "#383E56",
       date: "Sept 2023 - Present",
       points: [
-        "Prospective BA in CS & Econ Double Major.",
-        "Relevant coursework: Principles of Economics, Calculus III, Introduction to Computer Science in Java.",
-        "CSI Rocketry Electronics Team, Formula Racing Low Voltage Team, Debate Team",
+        "Double Major in CS & Econ-Math",
+        "Relevant coursework: Machine Learning, Artifical Intelligence, Intermediate Microeconomics, Data Structures",
+        "CSI Rocketry Electronics Team, ADI Devfest Team, Table Tennis A Team",
+      ],
+    },
+    {
+      title: "Student Researcher",
+      company_name: "Columbia Engineering",
+      icon: columbia,
+      iconBg: "#383E56",
+      date: "March 2024 - Present",
+      points: [
+        "Developing software and hardware for Professor Sharon Di's Ditech Lab to facilitate a pedestrian safety warning system",
+        "Optimized location tracking, switching the localization technology from GPS to ultra-wideband technology, increasing accuracy from ± 5 meters to 10 cm",
+        "Developed an iOS application in SwiftUI to manage MQTT message transmission between servers and user devices, enhancing communication efficiency"
+      ],
+    },
+    {
+      title: "Financial Analyst Intern",
+      company_name: "Global Time Investment",
+      icon: global,
+      iconBg: "#383E56",
+      date: "March 2024 - Present",
+      points: [
+        "Analyzed financial statements and industry reports, summarizing key insights on business technology, financial accounting, and risk factors to draft comprehensive research papers on target companies’ financial health",
+        "Collaborated with senior analysts to evaluate investment opportunities and provide portfolio recommendations"
       ],
     },
     {
@@ -37,7 +61,7 @@
       date: "Sept 2020 - June 2023",
       points: [
         "Honors with Distinction & Full IB Diploma (41/45)",
-        "3rd in Canada at the Canadian Chemistry Competition "
+        "1st provincially and 3rd nationally at the Canadian Chemistry Competition "
       ],
     },
   ];
