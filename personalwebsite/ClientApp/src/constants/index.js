@@ -101,7 +101,7 @@
         },
       ],
       image: yhacks,
-      source_code_link: "https://gilbertworld.com/#/pedestrian",
+      source_code_link: "https://gilbertworld.com/#/yhacks",
     },
     {
       name: "Platformer Game",
