@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { blogs } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
+import { FaLink } from "react-icons/fa";
 
 const BlogCard = ({
     index,
@@ -9,6 +10,7 @@ const BlogCard = ({
     description,
     tags,
     image,
+    source_code_link,
   }) => {
     return (
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -19,8 +21,15 @@ const BlogCard = ({
               alt='project_image'
               className='w-full h-full object-cover rounded-2xl'
             />
-          </div>
-  
+              <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                >
+                  <FaLink alt='source code'/>
+                </div>
+              </div>
+            </div>
           <div className='ml-5'>
             <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>

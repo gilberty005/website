@@ -1,0 +1,42 @@
+.Carousel {
+    max-width: 80%; 
+    margin: 0 auto; 
+  }
+  
+.Carousel img {
+    width: 100%; 
+    max-height: 80vh; 
+    object-fit: cover;        
+    object-position: center; 
+}
+
+.title_blog {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog_content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #81AFDD;
+    font-weight: 600;
+}
+
+.Blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

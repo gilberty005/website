@@ -11,12 +11,12 @@ import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
 import { Pedestrian } from './pages/projectsfolder/project_details/pedestrian'
 import { YHacks } from './pages/projectsfolder/project_details/yhacks'
+import { Pokemon } from './pages/blogfolder/blogs/pokemon'
 import Navbar from './components/navbar/Navbar';
 
 const RouteWrapper = () => {
-  const location = useLocation(); // Get the current location
-  const showHeaderFooter = location.pathname !== '/lithum' && location.pathname !== '/frosci'; // Determine if we should show header and footer
-
+  const location = useLocation(); 
+  const showHeaderFooter = location.pathname !== '/lithum' && location.pathname !== '/frosci'; // Determine if header and footer are showed 
 
   return (
     <>
@@ -31,6 +31,7 @@ const RouteWrapper = () => {
         <Route path="/frosci" element={<Frosci />} />
         <Route path="/pedestrian" element={<Pedestrian />} />
         <Route path="/yhacks" element={<YHacks />}/>
+        <Route path="/pokemon" element={<Pokemon />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
       {showHeaderFooter && <Footer />}

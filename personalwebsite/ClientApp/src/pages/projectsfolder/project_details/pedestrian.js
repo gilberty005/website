@@ -1,6 +1,6 @@
 import React from "react";
 import uwb from "./../../../assets/uwb.png"
-import "./blog.css"
+import "./project.css"
 
 export function Pedestrian() {
   return (

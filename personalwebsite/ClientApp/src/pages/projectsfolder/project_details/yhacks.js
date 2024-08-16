@@ -1,6 +1,6 @@
 import React from "react";
 import yhacks from "./../../../assets/yhacks.png"
-import "./blog.css"
+import "./project.css"
 
 export function YHacks() {
   return (
