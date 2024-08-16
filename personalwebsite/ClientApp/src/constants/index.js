@@ -5,6 +5,8 @@
   import churchill from "../assets/churchill.png"
   import comingsoon from "../assets/comingsoon.png"
   import global from "../assets/global.png"
+  import uwb from "../assets/uwb.png"
+  import yhacks from "../assets/yhacks.png"
   
   const experiences = [
     {
@@ -68,21 +70,51 @@
   
   const projects = [
     {
-      name: "Platformer Game",
+      name: "Pedestrian Safety System",
       description:
-        "Have you tried to get to the 404 Not Found page yet? There you will be surprised by a simple platformer game.",
+        "A Swift app that uses UWB and three anchors to triangulate a location, sending data via MQTT to check if a pedestrian is in a danger zone, defined by Kalman filtering of live camera data.",
       tags: [
         {
-          name: "react",
+          name: "swift",
           color: "orange-text-gradient",
         },
         {
-          name: "javascript",
+          name: "hardware",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: uwb,
+      source_code_link: "https://gilbertworld.com/#/pedestrian",
+    },
+    {
+      name: "Yale Hacks Project",
+      description:
+        "A React and Flask application that converts a user prompt into a detailed lesson plan, a video script, and a mini video lesson, providing customization options at each stage.",
+      tags: [
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: yhacks,
+      source_code_link: "https://gilbertworld.com/#/pedestrian",
+    },
+    {
+      name: "Platformer Game",
+      description:
+        "Have you had a chance to explore the 404 Not Found page yet? There you will be surprised by a simple platformer game. Try to find the Easter Eggs :)",
+      tags: [
+        {
+          name: "react",
           color: "green-text-gradient",
         },
         {
           name: "gamedev",
-          color: "pink-text-gradient",
+          color: "blue-text-gradient",
         },
       ],
       image: platformer,
@@ -91,15 +123,11 @@
     {
       name: "The Google Effect",
       description:
-        "A short interactive demonstration of the \"Google Effect\" made as my project for Frontiers of Science (SCNC CC1000)",
+        "The Google effect is when we forget information that’s easily accessible online. This is a short interactive demo I created for my Frontiers of Science (SCNC CC1000) project.",
       tags: [
         {
           name: "react",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "columbia",
-          color: "blue-text-gradient",
+          color: "green-text-gradient",
         },
       ],
       image: idk,

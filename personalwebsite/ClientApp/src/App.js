@@ -9,6 +9,8 @@ import { Lithum } from './pages/lithum/lithum';
 import { Frosci } from './pages/frosci/frosci';
 import { Notfound } from './pages/notfoundfolder/notfound';
 import { Footer } from './containers';
+import { Pedestrian } from './pages/projectsfolder/project_details/pedestrian'
+import { YHacks } from './pages/projectsfolder/project_details/yhacks'
 import Navbar from './components/navbar/Navbar';
 
 const RouteWrapper = () => {
@@ -27,6 +29,8 @@ const RouteWrapper = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/lithum" element={<Lithum />} />
         <Route path="/frosci" element={<Frosci />} />
+        <Route path="/pedestrian" element={<Pedestrian />} />
+        <Route path="/yhacks" element={<YHacks />}/>
         <Route path="*" element={<Notfound />} />
       </Routes>
       {showHeaderFooter && <Footer />}
