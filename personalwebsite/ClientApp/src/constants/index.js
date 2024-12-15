@@ -8,6 +8,8 @@
   import uwb from "../assets/uwb.png"
   import yhacks from "../assets/yhacks.png"
   import pokemon1 from "../assets/pokemon1.png"
+  import finovax from "../assets/finovax.png"
+  import bio from "../assets/8396911.png"
   
   const experiences = [
     {
@@ -17,54 +19,78 @@
       iconBg: "#383E56",
       date: "Sept 2023 - Present",
       points: [
-        "Double Major in CS & Econ-Math",
-        "Relevant coursework: Machine Learning, Artifical Intelligence, Intermediate Microeconomics, Data Structures",
+        "GPA: 3.99",
+        "B.A. in CS & Econ-Math (Double Major)",
+        "Relevant coursework: Unsupervised Learning, Natural Language Processing, Machine Learning, Artifical Intelligence, Intermediate Macro/Microeconomics, Data Structures",
         "CSI Rocketry Electronics Team, ADI Devfest Team, Table Tennis A Team",
+        "TA for Discrete Mathematics for Spring 2025 Semester"
       ],
     },
     {
       title: "Student Researcher",
-      company_name: "Columbia Engineering",
+      company_name: "AlQuraishi Lab @ CUIMC",
+      icon: bio,
+      iconBg: "#383E56",
+      date: "November 2024 - Present",
+      points: [
+        "Working on implementing and training sparse autoencoders (SAEs) to address superposition in genomic language models",
+        "Creating genomic visualizations using the UCSC Genome Browser to showcase activated neurons"
+        ],
+    },
+    {
+      title: "Student Researcher",
+      company_name: "DiTech Lab @ Columbia Engineering",
       icon: columbia,
       iconBg: "#383E56",
       date: "March 2024 - Present",
       points: [
-        "Developing software and hardware for Professor Sharon Di's Ditech Lab to facilitate a pedestrian safety warning system",
-        "Optimized location tracking, switching the localization technology from GPS to ultra-wideband technology, increasing accuracy from ± 5 meters to 10 cm",
-        "Developed an iOS application in SwiftUI to manage MQTT message transmission between servers and user devices, enhancing communication efficiency"
-      ],
+        "Reduced 64% round-trip time (RTT) by developing an iOS application in SwiftUI to facilitate MQTT message transmission and reception between a server and user devices",
+        "Enhanced location tracking accuracy from ±5 meters to 20 cm, significantly outperforming traditional GPS solutions, by implementing a custom algorithm combining triangulation methods with ultra-wideband (UWB) technology ",
+        "Predicted pedestrian velocity using Kalman filters to determine entry and exit from designated danger zones",
+        ],
     },
     {
       title: "Financial Analyst Intern",
       company_name: "Global Time Investment",
       icon: global,
       iconBg: "#383E56",
-      date: "March 2024 - Present",
+      date: "June 2024 - August 2024",
       points: [
-        "Analyzed financial statements and industry reports, summarizing key insights on business technology, financial accounting, and risk factors to draft comprehensive research papers on target companies’ financial health",
-        "Collaborated with senior analysts to evaluate investment opportunities and provide portfolio recommendations"
+        "Drove $1M+ investment decision making with company stakeholders by analyzing financial statements of 10+ target firms using Excel and Bloomberg ",
+        "Delivered strategic portfolio recommendations by developing financial models and employing DCF and CCA methodologies"
       ],
     },
     {
-      title: "Student Researcher",
-      company_name: "Summer Science Program",
-      icon: ssp,
-      iconBg: "#E6DEDD",
-      date: "June 2022 - July 2022",
+      title: "Quant Intern",
+      company_name: "Finovax",
+      icon: finovax,
+      iconBg: "#383E56",
+      date: "March 2024 - May 2024",
       points: [
-        "MIT/Caltech sponsored program employing vector calculus, Python programming, and astrophysics to detect and track asteroids",
-        "Completed an extra project involving the transit method to detect exoplanet Qatar-1b",
+        "Built an interactive market trend visualization platform enabling traders to identify opportunities from real-time market trends using Backtrader, Plotly, and D3.js",
+        "Identified key patterns and correlations to inform potential trading strategies by conducting exploratory data analysis (EDA) on select datasets to using NumPy and Pandas"
       ],
     },
     {
       title: "Student",
       company_name: "Sir Winston Churchill High School",
       icon: churchill,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Sept 2020 - June 2023",
       points: [
         "Honors with Distinction & Full IB Diploma (41/45)",
         "1st provincially and 3rd nationally at the Canadian Chemistry Competition "
+      ],
+    },
+    {
+      title: "Student Researcher",
+      company_name: "Summer Science Program",
+      icon: ssp,
+      iconBg: "#383E56",
+      date: "June 2022 - July 2022",
+      points: [
+        "MIT/Caltech sponsored program employing vector calculus, Python programming, and astrophysics to detect and track asteroids",
+        "Completed an extra project involving the transit method to detect exoplanet Qatar-1b",
       ],
     },
   ];
