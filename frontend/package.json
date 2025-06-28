@@ -24,7 +24,6 @@
     "merge": "^2.1.1",
     "nodemailer": "^6.9.8",
     "oidc-client": "^1.11.5",
-    "openai": "^4.25.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -56,6 +55,7 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
@@ -91,6 +91,7 @@
     "eslint-plugin-react": "^7.30.1",
     "nan": "^2.16.0",
     "nodemon": "^3.0.2",
+    "npm-force-resolutions": "^0.0.10",
     "tailwindcss": "^3.4.1",
     "typescript": "^4.7.4"
   },
@@ -98,7 +99,8 @@
     "autoprefixer": "10.4.5"
   },
   "resolutions": {
-    "css-what": "^5.0.1",
-    "nth-check": "^3.0.1"
+    "css-what": "5.0.1",
+    "nth-check": "3.0.1",
+    "ws": "8.18.0"
   }
 }
