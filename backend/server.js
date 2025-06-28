@@ -12,6 +12,11 @@ const PORT = process.env.PORT || 3001;
 // Initialize Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+console.log('Starting backend...');
+console.log('RESEND_API_KEY:', process.env.RESEND_API_KEY ? 'set' : 'NOT SET');
+console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
+console.log('PORT:', process.env.PORT);
+
 // Security middleware
 app.use(helmet());
 
