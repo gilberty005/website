@@ -24,7 +24,7 @@ const Navbar = ({ signOut }) => {
                     <Menu />
                 </div>
             </div>
-            <div className="gilbert__navbar_menu">
+            <div className="gilbert__navbar_menu gilbert__navbar-menu-mobile">
             {toggleMenu
                 ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
                 : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}

@@ -9,7 +9,6 @@ export default function Voronoi({ imageUrl }) {
     const width = 500; 
     const height = 600; 
     const n = Math.round(width * height / 40); 
-    let i = 0;
     const context = canvasRef.current.getContext('2d');
     const workerScript = URL.createObjectURL(new Blob([`
       importScripts("https://cdn.observableusercontent.com/npm/d3-delaunay@6.0.4/dist/d3-delaunay.min.js");
@@ -93,12 +92,12 @@ export default function Voronoi({ imageUrl }) {
       worker.terminate();
       URL.revokeObjectURL(workerScript);
     };
-  }, []);
+  }, [imageUrl]);
 
   useEffect(() => {
-    if (imageLoaded && imageLoaded && points.length > 0) {
+    if (imageLoaded && points.length > 0) {
       const context = canvasRef.current.getContext('2d');
-      if(imageLoaded == true){
+      if(imageLoaded === true){
         canvasRef.current.style.display = 'block'; 
       }
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
@@ -119,7 +118,7 @@ export default function Voronoi({ imageUrl }) {
         context.fill();
       }
     }
-  }, [imageLoaded,imageLoaded, points]);
+  }, [imageLoaded, points]);
 
   return <canvas ref={canvasRef} width="500" height="600" style={{ display: 'none' }}/>;
 }

@@ -29,7 +29,7 @@ const socialLinks = [
 const Footer = () => (
     <div className="gilbert__footer section__padding">
       <div className="gilbert__footer-links">
-      <div className="gilbert__footer-links_social"> {/* Move social icons div above */}
+      <div className="gilbert__footer-links_social"> 
         {socialLinks.map((link) => (
           <a key={link.id} href={link.url} target="_blank" rel="noopener noreferrer">
             {link.icon}
@@ -37,7 +37,7 @@ const Footer = () => (
         ))}
       </div>
       <div className="gilbert__footer-links_logo">
-        <p>© 2024 by Gilbert Yang with &lt;3</p>
+        <p>© 2025 by Gilbert Yang with &lt;3</p>
       </div>
       </div>
     </div>

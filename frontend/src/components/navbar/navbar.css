@@ -115,12 +115,20 @@
     display: none;
 }
 
+.gilbert__navbar-menu-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1050px) {
     .gilbert__navbar-links_container {
         display: none;
     }
 
     .gilbert__navbar-menu {
+        display: flex;
+    }
+
+    .gilbert__navbar-menu-mobile {
         display: flex;
     }
 }

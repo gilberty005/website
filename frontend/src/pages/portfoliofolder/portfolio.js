@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -52,19 +52,55 @@ const ExperienceCard = ({ experience }) => {
     );
 };
 
+const FilterButton = ({ category, activeCategory, onClick, children }) => {
+  return (
+    <button
+      onClick={() => onClick(category)}
+      className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+        activeCategory === category
+          ? 'bg-gradient-to-r from-[#488B8A] to-[#9B75D9] text-white shadow-lg'
+          : 'bg-[#1d1836] text-gray-300 hover:bg-[#2a1f4a] hover:text-white'
+      }`}
+    >
+      {children}
+    </button>
+  );
+};
+
 export function Portfolio() {
+    const [activeCategory, setActiveCategory] = useState('all');
+
+    const filteredExperiences = activeCategory === 'all' 
+      ? experiences 
+      : experiences.filter(experience => experience.category === activeCategory);
+
+    const categories = [
+      { key: 'all', label: 'All' },
+      { key: 'education', label: 'Education' },
+      { key: 'professional', label: 'Professional' },
+      { key: 'research', label: 'Research' }
+    ];
+
     return (
         <>
             <section>
-                <motion.div variants={textVariant()}>
-                <h2 className={`gradient__text text-center`}>
-                    Timeline of my Experiences
-                </h2>
-                </motion.div>
+                {/* Filter Buttons */}
+                <div className='mt-10 flex justify-center gap-4 flex-wrap'>
+                    {categories.map((category) => (
+                        <FilterButton
+                            key={category.key}
+                            category={category.key}
+                            activeCategory={activeCategory}
+                            onClick={setActiveCategory}
+                        >
+                            {category.label}
+                        </FilterButton>
+                    ))}
+                </div>
 
                 <div className='mt-20 flex flex-col'>
                     <VerticalTimeline>
-                        {experiences.map((experience, index) => (
+                        {filteredExperiences.map((experience, index) => (
                             <ExperienceCard
                             key={`experience-${index}`}
                             experience={experience}
