@@ -55,7 +55,6 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
@@ -97,10 +96,5 @@
   },
   "overrides": {
     "autoprefixer": "10.4.5"
-  },
-  "resolutions": {
-    "css-what": "5.0.1",
-    "nth-check": "3.0.1",
-    "ws": "8.18.0"
   }
 }
