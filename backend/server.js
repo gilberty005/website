@@ -53,7 +53,7 @@ app.post('/api/contact', async (req, res) => {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <noreply@yourdomain.com>', // You'll set this up in Resend
+      from: 'Contact Form <noreply@gilbertworld.com>',
       to: ['gilberty005@gmail.com'], // Your email
       subject: `Contact Form: ${subject}`,
       html: `
