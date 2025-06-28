@@ -37,6 +37,7 @@ app.use(express.json());
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
+  console.log('Health check received');
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
@@ -90,4 +91,11 @@ app.post('/api/contact', async (req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection:', reason);
+});
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
 }); 
