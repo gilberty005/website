@@ -88,6 +88,11 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+// Catch-all route to keep Railway container alive
+app.get('*', (req, res) => {
+  res.status(200).send('Backend is running');
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
