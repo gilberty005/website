@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { blogs } from "../../constants";
+import { blogs } from "../../config/constants";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { FaLink } from "react-icons/fa";
 

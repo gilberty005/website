@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css'; 
 import Typed from 'typed.js';
 import { useEffect, useRef } from "react";
-import Voronoi from '../../components/voronoi/voronoi'
+import Voronoi from '../voronoi/voronoi'
 import { Link } from 'react-router-dom';
 import gilbert from '../../assets/gilbert.png'
 

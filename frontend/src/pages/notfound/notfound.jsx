@@ -189,16 +189,13 @@ export function Notfound() {
             c.translate(camera.position.x,camera.position.y);
             background.update();
 
-
-            {/*
-            CollisionBlocks.forEach(CollisionBlock => {
-                CollisionBlock.update();
-            })
-            platformCollisionBlocks.forEach(block => {
-                block.update();
-            })
-            */}
-            
+            // Collision blocks rendering disabled for cleaner visuals
+            // CollisionBlocks.forEach(CollisionBlock => {
+            //     CollisionBlock.update();
+            // })
+            // platformCollisionBlocks.forEach(block => {
+            //     block.update();
+            // })
 
             player.checkForHorizontalCanvasCollisions();
             player.update();
@@ -269,6 +266,9 @@ export function Notfound() {
                 case 'ArrowRight':
                     keys.d.pressed = true;
                     break;
+                default:
+                    // Other keys are ignored
+                    break;
             }
         })
 
@@ -285,6 +285,9 @@ export function Notfound() {
                     break;
                 case 'ArrowRight':
                     keys.d.pressed = false;
+                    break;
+                default:
+                    // Other keys are ignored
                     break;
             }
         })

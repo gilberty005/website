@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { projects } from "../../constants";
+import { projects } from "../../config/constants";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { FaLink } from "react-icons/fa";
 

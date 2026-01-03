@@ -1,5 +1,5 @@
 import './home.css'; 
-import { Header } from '../../containers'; 
+import Header from '../../components/Header/Header'; 
 
 
 export function Home() {

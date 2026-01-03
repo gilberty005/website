@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
+import { submitContactForm } from "../../utils/api";
 
 export function Contact() {
  const [formData, setFormData] = useState({
@@ -17,30 +18,18 @@ export function Contact() {
    setIsSubmitting(true);
    
    try {
-     const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/contact`, {
-       method: 'POST',
-       headers: {
-         'Content-Type': 'application/json',
-       },
-       body: JSON.stringify(formData)
+     await submitContactForm(formData);
+     alert("Your message has been delivered!");
+     // Clear form inputs
+     setFormData({
+       name: "",
+       email: "",
+       subject: "",
+       message: "",
      });
-
-     if (response.ok) {
-       alert("Your message has been delivered!");
-       // Clear form inputs
-       setFormData({
-         name: "",
-         email: "",
-         subject: "",
-         message: "",
-       });
-     } else {
-       const errorData = await response.json();
-       alert(`Error: ${errorData.error || 'Your message was unsuccessful. Please try again later.'}`);
-     }
    } catch (error) {
      console.error('Error sending message:', error);
-     alert("Network error. Please check your connection and try again.");
+     alert(`Error: ${error.message || 'Your message was unsuccessful. Please try again later.'}`);
    } finally {
      setIsSubmitting(false);
    }

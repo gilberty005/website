@@ -109,7 +109,7 @@ const TypingText = () => {
     );
   };
 
-  const TypingText_2 = () => {
+  const TypingText2 = () => {
     const el = useRef(() => {
 
     });
@@ -149,7 +149,7 @@ const TypingText = () => {
     );
   };
 
-  const TypingText_3 = () => {
+  const TypingText3 = () => {
     const el = useRef(() => {
 
     });
@@ -210,7 +210,7 @@ const TypingText = () => {
   };
 
 
-  const TypingText_4 = () => {
+  const TypingText4 = () => {
     const el = useRef(() => {
 
     });
@@ -293,7 +293,7 @@ export function Frosci() {
                 <h1 className = "gradient__text">Easy right? How about this next set?</h1>
             </div>
             <div className="middle_2">
-                <h1 className = "gradient__text"><TypingText_2 /></h1>
+                <h1 className = "gradient__text"><TypingText2 /></h1>
             </div>
             <div className="middle_2">
                 <h1 className = "gradient__text">A lot harder right? Be honest, did you Google any of them or feel the inclination to Google? </h1>
@@ -304,7 +304,7 @@ export function Frosci() {
                 <h2 className="title_description"> You will see 3 text boxes, each labelled with a different storage ID. You will see a list of facts flash on the top of your screen. As the facts appear, pick a text box and type them in. Make sure each text box at least has one fact in it. There's no need to type in all the facts that appear, just do a few. :) Finally, click submit at the very end.</h2>
             </div>
             <div className="middle_2">
-                <h1 className="gradient__text"><TypingText_3 /></h1>
+                <h1 className="gradient__text"><TypingText3 /></h1>
                 <FactInputArea />
             </div>
             <div className="middle_2">
@@ -312,20 +312,20 @@ export function Frosci() {
                 <h1 className = "gradient__text">Sorry! Anyways, I have a few more trival questions for you, care to try?</h1>
             </div>
             <div className="middle_2">
-                <h1 className = "gradient__text"><TypingText_4 /></h1>
+                <h1 className = "gradient__text"><TypingText4 /></h1>
             </div>
             <div className="middle_2">
                 <h1 className = "gradient__text">Recall anything? Or perhaps, do you recall which storage box you placed the fact in?</h1>
                 <h2 className="title_description">It turns out that among a group of 32 college students who were asked to perform the same task, in a more rigorous study, there was a statistically sigificant difference between the percentage of students who recalled the fact verus the percertange of students who recalled where they stored the fact.</h2>
                 <div className="frosci-image-container">
-                  <img src={frosci} alt="Frosci Image" className="frosci-image" />
+                  <img src={frosci} alt="Frosci" className="frosci-image" />
                 </div>
             </div >
             <div className="middle_2">
                 <h1 className = "gradient__text">Analysis and Conclusions</h1>
                 <h2 className="title_description">The research on the Google effect from Betsy Sparrow, Jenny Liu and Daniel M. Wegner highlights the Google effect: our instinct to not delve deeper into our own knowledge banks, but to rather turn to online searchs for quick answers. This reflects a shift from internal memory strategies towards an external, technology-based transactive memory system. Search engines are not mere tools of convenience; they have fundamentally changed how we encode and retrieve information.</h2>
                 <div className="frosci-image-container">
-                    <img src={google} alt="Frosci Image" className="google" />
+                    <img src={google} alt="Google" className="google" />
                 </div>
             </div>
         </div>

@@ -1,38 +1,39 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { Blog } from './pages/blogfolder/blog';
-import { Contact } from './pages/contactfolder/contact';
-import { Portfolio } from './pages/portfoliofolder/portfolio';
-import { Projects } from './pages/projectsfolder/projects';
-import { Home } from './pages/homefolder/home';
-import { Lithum } from './pages/lithum/lithum';
-import { Frosci } from './pages/frosci/frosci';
-import { Notfound } from './pages/notfoundfolder/notfound';
-import { Footer } from './containers';
-import { Pedestrian } from './pages/projectsfolder/project_details/pedestrian'
-import { YHacks } from './pages/projectsfolder/project_details/yhacks'
-import { Pokemon } from './pages/blogfolder/blogs/pokemon'
+import { Blog } from './pages/blog/blog.jsx';
+import { Contact } from './pages/contact/contact.jsx';
+import { Portfolio } from './pages/portfolio/portfolio.jsx';
+import { Projects } from './pages/projects/projects.jsx';
+import { Home } from './pages/home/home.jsx';
+import { Lithum } from './pages/lithum/lithum.jsx';
+import { Frosci } from './pages/frosci/frosci.jsx';
+import { Notfound } from './pages/notfound/notfound.jsx';
+import Footer from './components/Footer/Footer';
+import { Pedestrian } from './pages/projects/project_details/pedestrian.jsx';
+import { YHacks } from './pages/projects/project_details/yhacks.jsx';
+import { Pokemon } from './pages/blog/blogs/pokemon.jsx';
 import Navbar from './components/navbar/Navbar';
+import { routes, hideNavbarFooterRoutes } from './config/routes';
 
 const RouteWrapper = () => {
-  const location = useLocation(); 
-  const showHeaderFooter = location.pathname !== '/lithum' && location.pathname !== '/frosci'; // Determine if header and footer are showed 
+  const location = useLocation();
+  const showHeaderFooter = !hideNavbarFooterRoutes.includes(location.pathname);
 
   return (
     <>
       {showHeaderFooter && <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/lithum" element={<Lithum />} />
-        <Route path="/frosci" element={<Frosci />} />
-        <Route path="/pedestrian" element={<Pedestrian />} />
-        <Route path="/yhacks" element={<YHacks />}/>
-        <Route path="/pokemon" element={<Pokemon />} />
-        <Route path="*" element={<Notfound />} />
+        <Route path={routes.home} element={<Home />} />
+        <Route path={routes.portfolio} element={<Portfolio />} />
+        <Route path={routes.projects} element={<Projects />} />
+        <Route path={routes.blog} element={<Blog />} />
+        <Route path={routes.contact} element={<Contact />} />
+        <Route path={routes.lithum} element={<Lithum />} />
+        <Route path={routes.frosci} element={<Frosci />} />
+        <Route path={routes.pedestrian} element={<Pedestrian />} />
+        <Route path={routes.yhacks} element={<YHacks />} />
+        <Route path={routes.pokemon} element={<Pokemon />} />
+        <Route path={routes.notFound} element={<Notfound />} />
       </Routes>
       {showHeaderFooter && <Footer />}
     </>

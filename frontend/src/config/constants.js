@@ -3,7 +3,6 @@
   import columbia from "../assets/columbia.png"
   import ssp from "../assets/ssp.png"
   import churchill from "../assets/churchill.png"
-  import comingsoon from "../assets/comingsoon.png"
   import global from "../assets/global.png"
   import uwb from "../assets/uwb.png"
   import yhacks from "../assets/yhacks.png"
