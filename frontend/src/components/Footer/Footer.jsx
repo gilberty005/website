@@ -37,7 +37,7 @@ const Footer = () => (
         ))}
       </div>
       <div className="gilbert__footer-links_logo">
-        <p>© 2025 by Gilbert Yang with &lt;3</p>
+        <p>© 2026 by Gilbert Yang with &lt;3</p>
       </div>
       </div>
     </div>

@@ -21,10 +21,10 @@
       date: "Sept 2023 - Present",
       category: "education",
       points: [
-        "GPA: 4.01",
+        "GPA: 4.0/4.0",
         "B.A. in CS & Econ-Math (Double Major)",
-        "Relevant coursework: Unsupervised Learning, Natural Language Processing, Machine Learning, Artifical Intelligence, Intermediate Macro/Microeconomics, Data Structures",
-        "TA for Discrete Mathematics for Spring 2025 Semester"
+        "Relevant coursework: Theortical Foundations of LLMs, Unsupervised Learning, NLP, ML, AI",
+        "TA for Discrete Mathematics (x2) and ML (x1)"
       ],
     },
     {
@@ -32,10 +32,12 @@
       company_name: "Amazon Web Services",
       icon: aws,
       iconBg: "#383E56",
-      date: "May 2025 - Present",
+      date: "May 2025 - August 2025",
       category: "professional",
       points: [
-        "Working as part of the AWS Marketplace Procurement Team on an internal ticket automation agent",
+        "Intern for the AWS Marketplace Procurement Team",
+        "Developed an automated ticketing agent to reduce burden of incoming on-call tickets, reducing on-call resolution time by 80%",
+        "Ate a lot of bananas :)"
       ],
     },
     {
@@ -46,7 +48,9 @@
       date: "Janurary 2025 - Present",
       category: "research",
       points: [
-        "Working on an interactive benchmark to assess the abilities of agents in strategic exploration under Professor Hongseok Namkoong",
+        "Developed benchmark for evaluating in-context experiential learning in LLM-based agents via repeated product-recommendation dialogues",
+        "Working on web based, non-textual version of this benchmark",
+        "Working on evaluation framework for LLM-based agents in fantasy sports (yay hockey!), assessing decision-making under uncertainty and across deeply interconnected events",
       ],
     },
     {
@@ -57,8 +61,8 @@
       date: "November 2024 - Present",
       category: "research",
       points: [
-        "Working on implementing and training sparse autoencoders (SAEs) to address superposition in genomic language models",
-        "Creating genomic visualizations using the UCSC Genome Browser to showcase activated neurons"
+        "Working on implementing and training sparse autoencoders (SAEs) and their variations to address superposition in genomic language models",
+        "Exploring feature-level steering methods to control generative behaviour of genomic language models, enabling targeted manipulation of outputs"
         ],
     },
     {
