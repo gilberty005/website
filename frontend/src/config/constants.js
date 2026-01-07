@@ -11,6 +11,7 @@
   import bio from "../assets/8396911.png"
   import business from "../assets/bus.png"
   import aws from "../assets/aws.png"
+  import setup from "../assets/setup.png"
   
   const experiences = [
     {
@@ -130,17 +131,26 @@
   
   const projects = [
     {
+      name: "Experiential Learning",
+      description:
+        "Agents must grapple with incomplete knowledge and adapt their behaviour through experience. We present a benchmark for experiential learning and active exploration. ",
+      tags: [
+        {
+          name: "research",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: setup,
+      source_code_link: "https://www.experiential-learning-benchmark.com/",
+    },
+    {
       name: "Pedestrian Safety System",
       description:
         "A Swift app that uses UWB and three anchors to triangulate a location, sending data via MQTT to check if a pedestrian is in a danger zone, defined by Kalman filtering of live camera data.",
       tags: [
         {
-          name: "swift",
+          name: "research",
           color: "orange-text-gradient",
-        },
-        {
-          name: "hardware",
-          color: "pink-text-gradient",
         },
       ],
       image: uwb,
@@ -152,12 +162,8 @@
         "A React and Flask application that converts a user prompt into a detailed lesson plan, a video script, and a mini video lesson, providing customization options at each stage.",
       tags: [
         {
-          name: "react",
+          name: "software",
           color: "green-text-gradient",
-        },
-        {
-          name: "flask",
-          color: "purple-text-gradient",
         },
       ],
       image: yhacks,
@@ -169,12 +175,8 @@
         "Have you had a chance to explore the 404 Not Found page yet? There you will be surprised by a simple platformer game. Try to find the Easter Eggs :)",
       tags: [
         {
-          name: "react",
+          name: "software",
           color: "green-text-gradient",
-        },
-        {
-          name: "gamedev",
-          color: "blue-text-gradient",
         },
       ],
       image: platformer,
@@ -186,8 +188,8 @@
         "The Google effect is when we forget information that's easily accessible online. This is a short interactive demo I created for my Frontiers of Science (SCNC CC1000) project.",
       tags: [
         {
-          name: "react",
-          color: "green-text-gradient",
+          name: "fun",
+          color: "pink-text-gradient",
         },
       ],
       image: idk,
